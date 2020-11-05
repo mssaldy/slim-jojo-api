@@ -1,3 +1,37 @@
+## Setting Database in Local
+in `src/settings.php`
+```php
+// Database Settings
+'db' => [
+    'host' => 'localhost',
+    'user' => 'root', //user disesuaikan 
+    'pass' => 'contohPassword', //password disesuaikan
+    'dbname' => 'test',
+    'driver' => 'mysql'
+]
+```
+## How Run Server in Local
+Open Terminal in root project and type `php -S localhost:8002 -t public public/index.php` and go to `http://localhost:8002` in Postman or browser
+
+## Endpoint (in Postman using POST)
+* /getUser/{id}
+* /getListUser
+* /getCompany/{id}
+* /getListCompany
+* /getBudgetCompany/{id}
+* /getListBudgetCompany
+* /getLogTransaction
+* /createUser
+* /updateUser/{id}
+* /deleteUser/{id}
+* /createCompany
+* /updateCompany/{id}
+* /deleteCompany/{id}
+* /reimburse
+* /disburse/
+* /close/
+
+
 # Slim Framework 3 Skeleton Application
 
 Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the PHP-View template renderer. It also uses the Monolog logger.
